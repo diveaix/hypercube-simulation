@@ -193,7 +193,7 @@ function goToNextNode() {
 
 function showCompletionMessage() {
   const tweetText = encodeURIComponent(
-    "🧠 Just completed the Hypercube Simulator on-chain!\n\n4 nodes. 4 puzzles. 1 ZK Proof.\n\nI proved I'm not a Sybil 🌀\n \nRun your hypercube simulator\nLink: hypercube-simulation.vercel.app"
+    "Just completed the Hypercube Simulator on-chain!\n\n4 nodes. 4 puzzles. 1 ZK Proof.\n\nI proved I'm not a Sybil!\n \nRun your hypercube simulator\nLink: hypercube-simulation.vercel.app\n \n@SuccinctLabs @nair_advaith @0XCRASHOUT"
   );
   const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
 
