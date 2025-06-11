@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hypercube Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔥 Intro Video -->
+  <div id="introVideoContainer">
+    <video id="introVideo" autoplay muted playsinline>
+      <source src="assets/intro.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- 📖 Intro Pages -->
+  <div id="introExplanation" class="hidden">
+    <div id="introContent" class="intro-box"></div>
+    <div class="intro-controls">
+      <button id="prevPage">⬅</button>
+      <button id="nextPage">➡</button>
+    </div>
+    <br />
+    <button id="startGameBtn">▶ Start Game</button>
+  </div>
+
+  <!-- 🧩 Shard Tracker -->
+  <div id="shardTracker" class="hidden">
+    🧩 Proof Shards Collected: <span id="shardCount">0</span> / 4
+  </div>
+
+  <!-- 🧠 Game Title -->
+  <h1 class="hidden" id="mainTitle">💠 Hypercube Simulator</h1>
+
+  <!-- 🔷 Node Grid -->
+  <div id="hypercubeGrid" class="hidden">
+    <!-- Nodes rendered dynamically -->
+  </div>
+
+  <!-- 🌀 Thread Panel -->
+  <div id="threadView" class="hidden">
+    <h2 id="threadTitle">Node X</h2>
+    <div id="threadContent">🌀 Computation space</div>
+    <button id="backButton">⬅ Back</button>
+  </div>
+
+  <!-- 🧠 Game Script -->
+  <script src="script.js"></script>
+</body>
+</html>
